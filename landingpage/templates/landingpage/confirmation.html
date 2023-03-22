@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Biihappy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Văn Thành &amp; Phương Thanh - Xác nhận tham dự</title>
+    <meta name="description"
+        content="Để có thể xác nhận tham dự, bạn phải là người nhận được thiệp mời từ cô dâu và chú rể. Hãy nhập vào tên của bạn và tìm kiếm thiệp mời theo form bên dưới.">
+    <meta name="keywords" content="Wedding, Wedding website, Website đám cưới, Tạo website đám cưới miễn phí">
+    <meta property="og:site_name" content="Văn Thành &amp; Phương Thanh Wedding site!">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Văn Thành &amp; Phương Thanh - Xác nhận tham dự">
+    <meta property="og:url" content="https://thanhthanhwedding.iwedding.info/rsvp">
+    <meta property="og:description"
+        content="Để có thể xác nhận tham dự, bạn phải là người nhận được thiệp mời từ cô dâu và chú rể. Hãy nhập vào tên của bạn và tìm kiếm thiệp mời theo form bên dưới.">
+    <meta property="og:image"
+        content="https://biihappycom.sgp1.vultrobjects.com/ziiweb/default/website/galleries/61990322c41d7b37de534633/large.jpg">
+    <meta property="og:image:url"
+        content="https://biihappycom.sgp1.vultrobjects.com/ziiweb/default/website/galleries/61990322c41d7b37de534633/large.jpg">
+    <meta property="og:image:secure_url"
+        content="https://biihappycom.sgp1.vultrobjects.com/ziiweb/default/website/galleries/61990322c41d7b37de534633/large.jpg">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://thanhthanhwedding.iwedding.info/rsvp-template/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coiny&amp;family=Jura:wght@300&amp;family=MonteCarlo&amp;family=Tourney:wght@100&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        .container {
+            max-width: 650px;
+        }
+
+        #search-form h1 {
+            font-family: 'Jura', sans-serif;
+            font-size: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        #search-form h1 span {
+            padding: 0 15px;
+        }
+
+        @media only screen and (max-width: 410px) {
+            #search-form h1 {
+                font-size: 30px !important;
+            }
+        }
+
+        @media only screen and (max-width: 374px) {
+            #search-form h1 {
+                font-size: 22px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container my-3 my-md-5">
+        <div class="text-center">
+            <img style="max-width:350px;" class="w-100 border border-danger p-1 mb-5 border-2 rounded-circle"
+                src="https://biihappycom.sgp1.vultrobjects.com/ziiweb/default/website/galleries/61990322c41d7b37de534633/large.jpg">
+        </div>
+        <div>
+            <form id="search-form" method="post" novalidate="novalidate">
+                <h2 class="text-center fs-1" style="font-family: 'Coiny', cursive;">Xác nhận tham dự</h2>
+                <p class="text-center" style="font-family: 'Jura', sans-serif;font-size: 22px;">Đám cưới của</p>
+                <div class="d-flex flex-wrap align-items-center justify-content-center">
+                    <h1><span>Văn Thành</span> <img height="50"
+                            src="https://thanhthanhwedding.iwedding.info/album/heart.gif"> <span>Phương Thanh</span>
+                    </h1>
+                </div>
+                <p class="lead text-center mt-4" style="font-family: 'Jura', sans-serif;">Để có thể xác nhận tham dự,
+                    bạn phải là người nhận được thiệp mời từ cô dâu và chú rể. Hãy nhập vào tên của bạn và tìm kiếm
+                    thiệp mời theo form bên dưới.</p>
+                <div class="form-floating">
+                    <input type="text" name="name" class="form-control" placeholder="Nhập họ tên*">
+                    <label for="floatingInput">Nhập tên của bạn</label>
+                </div>
+                <div class="errors mt-1 text-danger"></div>
+                <input type="hidden" value="641ab174e10deca09a0ea950" name="website_id">
+                <button type="submit" class="btn btn-lg btn-danger text-center w-100 mt-3"
+                    style="font-family: 'Jura', sans-serif;">Tìm kiếm thiệp mời của bạn</button>
+            </form>
+        </div>
+        <div class="mt-3 search-response-success d-none" style="font-family: 'Jura', sans-serif;">
+            <form id="confirmation-form" method="post">
+                <p class="fw-bold text-center fs-6">Tìm thấy bạn trong danh sách khách mời. Vui lòng chọn đúng tên của
+                    bạn để tiếp tục.</p>
+                <div class="list-guest-container"></div>
+            </form>
+        </div>
+
+        <div class="mt-3 search-response-error d-none" style="font-family: 'Jura', sans-serif;">
+            <p class="fw-bold text-center fs-6 text-danger"></p>
+        </div>
+        <div>
+            <div class="row gx-3 mt-3">
+                <div class="col col-12 col-sm-6 mb-3"><a
+                        class="btn btn-lg btn-outline-dark w-100 border border-2 border-secondary"
+                        href="https://thanhthanhwedding.iwedding.info">Xem website</a></div>
+                <div class="col col-12 col-sm-6 mb-3"><a
+                        class="btn btn-lg btn-outline-dark w-100 border border-2 border-secondary"
+                        href="https://thanhthanhwedding.iwedding.info/photo-album">Xem album cưới</a></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://thanhthanhwedding.iwedding.info/rsvp-template/script.js?v=20211102"></script>
+    <script>
+        var webroot = 'https://thanhthanhwedding.iwedding.info';
+        if ($("#search-form").length) {
+            $("#search-form").validate({
+                errorLabelContainer: $("#search-form div.errors"),
+                rules: {
+                    name: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    name: {
+                        required: 'Vui lòng nhập tên của bạn.',
+                    }
+                },
+                submitHandler: function (form) {
+                    $("#search-form").find('button[type="submit"').attr('disabled', 'disabled');
+                    $.ajax({
+                        type: "GET",
+                        url: "https://thanhthanhwedding.iwedding.info/search-guests",
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        data: $(form).serialize(),
+                        success: function (res) {
+                            if (!res.error) {
+                                let data = res.data;
+                                let html = '';
+                                data.forEach((element) => {
+                                    html += `<div class="p-3 border mb-2 rounded position-relative"><div class="form-check">
+                                                <input class="form-check-input" type="radio" data-website-id="${element.website_id.$oid}" name="guestID" id="${element._id.$oid}" value="${element._id.$oid}">
+                                                <label class="form-check-label fw-semibold" for="${element._id.$oid}">${element.name}</label>
+                                            </div><label class="position-absolute w-100 h-100 top-0 start-0" role="button" for="${element._id.$oid}"></label></div>`;
+                                });
+                                html += ` <button type="submit" class="mt-2 btn btn-dark search-id disabled w-100 btn-lg">Xem thiệp mời và xác nhận</button>`;
+                                $('.list-guest-container').html(html);
+                                $('.search-response-success').removeClass('d-none');
+                                $('.search-response-error').addClass('d-none');
+                            } else {
+                                $('.search-response-error p').html(res.message);
+                                $('.search-response-error').removeClass('d-none');
+                                $('.search-response-success').addClass('d-none');
+                            }
+                        },
+                        complete: function () {
+                            $("#search-form").find('button[type="submit"').removeAttr('disabled');
+                        }
+                    });
+                    return false;
+                }
+            });
+        }
+
+        $(document).on('click', '.form-check-input', function (event) {
+            if ($('.search-id').hasClass('disabled')) {
+                $('.search-id').removeClass('disabled');
+            }
+        });
+
+        $(document).on('submit', '#confirmation-form', function (event) {
+            event.preventDefault();
+            var guestID = $(this).find('input[name="guestID"]:checked').val();
+            window.location.href = webroot + '/invitation/' + guestID;
+            return false;
+        });
+
+        $(window).on('load', function (event) {
+            event.preventDefault();
+        });
+    </script>
+
+</body>
+
+</html>
